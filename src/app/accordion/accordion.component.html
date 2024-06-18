@@ -1,0 +1,17 @@
+<div>
+  <div
+    (click)="toggle()"
+    style="
+      cursor: pointer;
+      background-color: #ffffff;
+      padding: 0.3% 1%;
+      color: black;
+    "
+  >
+    <h3>{{ title }}</h3>
+  </div>
+  <div *ngIf="isOpen">
+    <ng-content></ng-content>
+  </div>
+  <br />
+</div>
